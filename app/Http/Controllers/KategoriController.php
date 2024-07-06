@@ -21,7 +21,7 @@ class KategoriController extends Controller
     public function index()
     {
         $totberita = berita::count('id');
-        $kategori = kategori::all();
+        $kategori = kategori::withCount('berita')->get();
         return view('kategoris.index', compact('kategori', 'totberita'));
     }
 

@@ -14,6 +14,6 @@ class kategori extends Model
 
     public function berita()
     {
-        return $this->hasMany(berita::class);
+        return $this->hasMany('App\Models\berita', 'id_kategori', 'id');
     }
 }

@@ -23,20 +23,31 @@
                     </li>
                     <li class="nxl-item nxl-hasmenu">
                         <a href="{{route('kategori.index')}}" class="nxl-link">
-                            <span class="nxl-micon"><i class="feather-airplay"></i></span>
+                            <span class="nxl-micon"><i class="bi bi-bookmarks"></i></i></span>
                             <span class="nxl-mtext">Kategori</span><span class="nxl-arrow"></span>
                         </a>
                     </li>
                     <li class="nxl-item nxl-hasmenu">
                         <a href="{{route('berita.index')}}" class="nxl-link">
-                            <span class="nxl-micon"><i class="feather-airplay"></i></span>
+                            <span class="nxl-micon"><i class="bi bi-newspaper"></i></i></span>
                             <span class="nxl-mtext">List Berita</span><span class="nxl-arrow"></span>
                         </a>
                     </li>
                     <li class="nxl-item nxl-hasmenu">
                         <a href="{{route('users.index')}}" class="nxl-link">
-                            <span class="nxl-micon"><i class="feather-airplay"></i></span>
+                            <span class="nxl-micon"><i class="bi bi-person-check"></i></i></span>
                             <span class="nxl-mtext">List User</span><span class="nxl-arrow"></span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="nxl-navbar">
+                    <li class="nxl-item nxl-caption">
+                        <label>Detail Acount</label>
+                    </li>
+                    <li class="nxl-item nxl-hasmenu">
+                        <a href="" class="nxl-link">
+                            <span class="nxl-micon"><i class="bi bi-person-bounding-box"></i></i></span>
+                            <span class="nxl-mtext">my Profile</span><span class="nxl-arrow"></span>
                         </a>
                     </li>
                 </ul>

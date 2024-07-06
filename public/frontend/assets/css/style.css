@@ -2698,12 +2698,12 @@ hr {
     position: absolute;
     width: 170px;
     background: #fff;
-    left: 0;
-    top: 120%;
+    left: -130px;
+    top: 80%;
     visibility: hidden;
     opacity: 0;
     box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.05);
-    padding: 17px 0;
+    padding: 10px 0;
     border-top: 5px solid #fc3f00;
     -webkit-transition: all .3s ease-out 0s;
     -moz-transition: all .3s ease-out 0s;
@@ -2862,7 +2862,7 @@ hr {
 
 .trending-area .trending-main .trending-top .trend-top-img img {
     width: 100%;
-    border-radius: 7px
+    border-radius: 10px
 }
 
 .trending-area .trending-main .trending-top .trend-top-img .trend-top-cap {
@@ -3735,7 +3735,7 @@ hr {
     padding: 0
 }
 
-.footer-area .footer-tittle h4 {
+.footer-area .footer-tittle h1 {
     color: #fff;
     font-size: 20px;
     margin-bottom: 29px;

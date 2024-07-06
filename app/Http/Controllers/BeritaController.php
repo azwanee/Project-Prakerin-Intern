@@ -22,6 +22,8 @@ class BeritaController extends Controller
     public function index()
     {
         $berita = berita::all();
+
+
         return view('beritas.index', compact('berita'));
     }
 
@@ -111,6 +113,7 @@ class BeritaController extends Controller
         $berita->isi = $request->isi;
         
         if ($request->hasFile('cover')) {
+            $berita->deleteImage();
             $img = $request->file('cover');
             $name = rand(1000, 9999) . $img->getClientOriginalName();
             $img->move('img/berita', $name);

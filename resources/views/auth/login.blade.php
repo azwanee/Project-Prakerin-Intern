@@ -10,10 +10,10 @@
     <meta name="author" content="theme_ocean">
     <!--! The above 6 meta tags *must* come first in the head; any other head content must come *after* these tags !-->
     <!--! BEGIN: Apps Title-->
-    <title>Duralux || Login Minimal</title>
+    <title>Log In Here</title>
     <!--! END:  Apps Title-->
     <!--! BEGIN: Favicon-->
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('backend/assets/images/favicon.ico') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('backend/assets/images/logo-abbr.png') }}">
     <!--! END: Favicon-->
     <!--! BEGIN: Bootstrap CSS-->
     <link rel="stylesheet" type="text/css" href="{{ asset('backend/assets/css/bootstrap.min.css') }}">
@@ -60,10 +60,10 @@
                                 <button type="submit" class="btn btn-lg btn-primary w-100">Login</button>
                             </div>
                         </form>
-                        <div class="mt-5 text-muted">
+                        {{-- <div class="mt-5 text-muted">
                             <span> Don't have an account?</span>
                             <a href="{{ route('register') }}" class="fw-bold">Create an Account</a>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>

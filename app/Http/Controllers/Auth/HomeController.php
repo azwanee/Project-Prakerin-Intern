@@ -1,9 +1,11 @@
 <?php
 
 namespace App\Http\Controllers\Auth;
-use App\Http\Controllers\Controller;
 
-use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use App\Models\berita;
+use App\Models\kategori;
+use App\Models\User;
 
 class HomeController extends Controller
 {
@@ -20,7 +22,13 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('auth.home');
+        $totberita = berita::count('id');
+        $totkategori = kategori::count('id');
+        $totuser = User::count('id');
+        $berita = berita::latest()->limit(1)->get();
+        $kategori = kategori::all();
+        $user = User::all();
+        return view('auth.home', compact('berita', 'kategori', 'user', 'totberita', 'totkategori', 'totuser'));
 
     }
 }

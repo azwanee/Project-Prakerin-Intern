@@ -10,10 +10,10 @@
     <meta name="author" content="theme_ocean" />
     <!--! The above 6 meta tags *must* come first in the head; any other head content must come *after* these tags !-->
     <!--! BEGIN: Apps Title-->
-    <title>Duralux || Dashboard</title>
+    <title>Admin Dashboard</title>
     <!--! END:  Apps Title-->
     <!--! BEGIN: Favicon-->
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('backend/assets/images/favicon.ico') }}" />
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('backend/assets/images/logo-abbr.png') }}" />
     <!--! END: Favicon-->
     <!--! BEGIN: Bootstrap CSS-->
     <link rel="stylesheet" type="text/css" href="{{ asset('backend/assets/css/bootstrap.min.css') }}" />
@@ -60,7 +60,80 @@
             <!-- [ Main Content ] start -->
             <div class="main-content">
                 <div class="row">
-                    @yield('content')
+                    <div class="col-xxl-3 col-md-6">
+                        <div class="card stretch stretch-full">
+                            <div class="card-body">
+                                <div class="d-flex align-items-start justify-content-between mb-4">
+                                    <div class="d-flex gap-4 align-items-center">
+                                        <div class="avatar-text avatar-lg bg-gray-200">
+                                            <i class="bi bi-list-check"></i>
+                                        </div>
+                                        <div>
+                                            <div class="fs-4 fw-bold text-dark"><span class="counter">{{ $totkategori }}</div>
+                                            <h1 class="fs-13 fw-semibold text-truncate-1-line"><strong>Total Kategori</strong></h1>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown">
+                                        <a href="javascript:void(0);" class="avatar-text avatar-sm" data-bs-toggle="dropdown" >
+                                            <div data-bs-toggle="tooltip" title="Click Here">
+                                                <i class="feather-more-vertical"></i>
+                                            </div>
+                                        </a>
+                                        @foreach ($kategori as $data)
+                                            <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="{{ route('kategori.index') }}"><i class="feather-more-vertical"></i> Lihat Tabel </a>
+                                        </div>
+                                        @endforeach
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-md-6">
+                        <div class="card stretch stretch-full">
+                            <div class="card-body">
+                                <div class="d-flex align-items-start justify-content-between mb-4">
+                                    <div class="d-flex gap-4 align-items-center">
+                                        <div class="avatar-text avatar-lg bg-gray-200">
+                                            <i class="bi bi-people-fill"></i>
+                                        </div>
+                                        <div>
+                                            <div class="fs-4 fw-bold text-dark"><span class="counter">{{ $totuser }}</div>
+                                            <h1 class="fs-13 fw-semibold text-truncate-1-line"><strong>Total Pengguna</strong></h1>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown">
+                                        <a href="javascript:void(0);" class="avatar-text avatar-sm" data-bs-toggle="dropdown" >
+                                            <div data-bs-toggle="tooltip" title="Click Here">
+                                                <i class="feather-more-vertical"></i>
+                                            </div>
+                                        </a>
+                                        @foreach ($user as $data)
+                                            <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="{{ route('users.index') }}"><i class="feather-more-vertical"></i> Lihat Tabel </a>
+                                        </div>
+                                        @endforeach
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-md-12">
+                        <div class="card stretch stretch-full">
+                            <div class="card-body" style="background-image: url()">
+                                <div class="d-flex align-items-start justify-content-between mb-4">
+                                    <div class="d-flex gap-4 align-items-center">
+                                        <div>
+                                        <div class="fs-2 fw-bold text-dark "><span class="counter">Berita Terkini</div>
+                                        @foreach ($berita as $data)
+                                            <h1 class="fs-6 fw-semibold text-truncate-2-line mt-5"><strong>{{$data->isi}}</strong></h1>
+                                        </div>
+                                        @endforeach
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- [ Main Content ] end -->
