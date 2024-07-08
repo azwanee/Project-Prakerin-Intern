@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\User;
+namespace App\Http\Controllers;
 
 use App\Models\berita;
 
@@ -16,6 +16,6 @@ class HomeController extends Controller
         $recent = berita::latest()->limit(5)->get();
         $category = berita::latest()->limit(6)->get();
 
-        return view('user.home', compact('tranding', 'category', 'satu', 'recent'));
+        return view('welcome', compact('tranding', 'category', 'satu', 'recent'));
     }
 }

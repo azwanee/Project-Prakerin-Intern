@@ -19,7 +19,7 @@ return new class extends Migration
             $table->String('judul');
             $table->unsignedBigInteger('id_user');
             $table->unsignedBigInteger('id_kategori');
-            $table->String('isi');
+            $table->longtext('isi');
             $table->timestamps();
 
             $table->foreign('id_user')->references('id')->on('users')->onDelete('cascade');

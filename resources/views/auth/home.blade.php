@@ -60,7 +60,7 @@
             <!-- [ Main Content ] start -->
             <div class="main-content">
                 <div class="row">
-                    <div class="col-xxl-3 col-md-6">
+                    <div class="col-xxl-6 col-md-6">
                         <div class="card stretch stretch-full">
                             <div class="card-body">
                                 <div class="d-flex align-items-start justify-content-between mb-4">
@@ -89,7 +89,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xxl-3 col-md-6">
+                    <div class="col-xxl-6 col-md-6">
                         <div class="card stretch stretch-full">
                             <div class="card-body">
                                 <div class="d-flex align-items-start justify-content-between mb-4">
@@ -118,9 +118,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xxl-3 col-md-12">
+                    <div class="col-xxl-12 col-md-12">
                         <div class="card stretch stretch-full">
-                            <div class="card-body" style="background-image: url()">
+                            <div class="card-body">
                                 <div class="d-flex align-items-start justify-content-between mb-4">
                                     <div class="d-flex gap-4 align-items-center">
                                         <div>

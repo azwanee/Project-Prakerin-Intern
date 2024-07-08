@@ -105,7 +105,7 @@
                                                 </select>
                                                 
                                                 <label class="form-label">Isi Berita</label>
-                                                <input type="text" class="form-control" name="isi" value="{{$berita->isi}}">
+                                                <textarea type="text" class="form-control" name="isi" value="{{$berita->isi}}"></textarea>
 
                                             </div>
                                             <button type="submit" class="btn btn-primary">Save</button>

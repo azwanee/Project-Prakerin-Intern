@@ -94,7 +94,7 @@
                                             </div>
                                             <div class="mb-3">
                                                 <label for="exampleInputEmail1">Isi Berita</label>
-                                                <input type="text" class="form-control" name="isi">
+                                                <textarea type="text" class="form-control" name="isi"></textarea>
                                             </div>
                                             <button type="submit" class="btn btn-primary">Save</button>
                                             <a href="{{url('berita')}}" class="btn btn-primary mt-2">Back</a>

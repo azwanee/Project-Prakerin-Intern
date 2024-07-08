@@ -116,11 +116,9 @@
     <main>
         {{-- Content --}}
         @include('include.frontend.tranding')
-    
+        
         @include('include.frontend.category')
-    
-        @include('include.frontend.recent')
-        {{-- Content --}}
+            {{-- Content --}}
     </main>
     
    <footer>
