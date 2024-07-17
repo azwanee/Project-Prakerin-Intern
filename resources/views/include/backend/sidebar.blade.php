@@ -40,17 +40,6 @@
                         </a>
                     </li>
                 </ul>
-                <ul class="nxl-navbar">
-                    <li class="nxl-item nxl-caption">
-                        <label>Detail Acount</label>
-                    </li>
-                    <li class="nxl-item nxl-hasmenu">
-                        <a href="" class="nxl-link">
-                            <span class="nxl-micon"><i class="bi bi-person-bounding-box"></i></i></span>
-                            <span class="nxl-mtext">my Profile</span><span class="nxl-arrow"></span>
-                        </a>
-                    </li>
-                </ul>
             </div>
         </div>
     </nav>

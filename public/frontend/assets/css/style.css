@@ -2849,7 +2849,9 @@ hr {
 
 .trending-area .trending-main .trending-top .trend-top-img {
     overflow: hidden;
-    position: relative
+    position: relative;
+    height: 30rem;
+    object-fit: cover;
 }
 
 .trending-area .trending-main .trending-top .trend-top-img::before {

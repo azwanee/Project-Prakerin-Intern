@@ -13,7 +13,7 @@ class HomeController extends Controller
     {
         $tranding = berita::latest()->limit(1)->get();
         $satu = berita::latest()->limit(3)->get();
-        $recent = berita::latest()->limit(5)->get();
+        $recent = berita::latest()->limit(3)->get();
         $category = berita::latest()->limit(6)->get();
 
         return view('user.home', compact('tranding', 'category', 'satu', 'recent'));

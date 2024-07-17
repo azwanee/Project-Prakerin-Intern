@@ -88,7 +88,7 @@
                                     <div class="col-sm-9">
                                         <div class="position-relative input-icon">
                                             <input type="password" class="form-control" id="password" name="password"
-                                                placeholder="Choose Password">
+                                                placeholder="Password">
                                         </div>
                                     </div>
                                 </div>
@@ -97,7 +97,7 @@
                                     <div class="col-sm-9">
                                         <div class="position-relative input-icon">
                                             <input type="password" class="form-control" id="password-confirm" name="password_confirmation"
-                                                placeholder="Choose Password">
+                                                placeholder="Confirm Password">
                                         </div>
                                     </div>
                                 </div>

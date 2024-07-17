@@ -24,7 +24,7 @@
                                 <img src="{{asset('/img/berita/' . $data->cover)}}" alt="">
                                 <div class="trend-top-cap">
                                     <span>{{$data->kategori->nama}}</span>
-                                    <h2><a href="details.html">{{$data->judul}}</a></h2>
+                                    <h2><a href="{{ route('berita.show', $data->id) }}">{{$data->judul}}</a></h2>
                                     <b style="color: white">{{ substr($data->isi,0,70) }} ...</b>
                                 </div>
                             </div>
@@ -42,7 +42,7 @@
                             </div>
                             <div class="trand-right-cap">
                                 <span class="color1">{{$data->kategori->nama}}</span>
-                                <h4><a href="details.html">{{ substr($data->isi,0,30) }} ...</a></h4>
+                                <h4><a href="{{ route('berita.show', $data->id) }}">{{ substr($data->isi,0,30) }} ...</a></h4>
                             </div>
                         </div>
                         @endforeach

@@ -14,11 +14,6 @@ class BeritaController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
-
     public function index()
     {
         $berita = berita::all();
@@ -37,6 +32,13 @@ class BeritaController extends Controller
         $user = User::all();
         $kategori = kategori::all();
         return view('beritas.create', compact('user', 'kategori'));
+    
+    }
+    public function tambah()
+    {
+        $user = User::all();
+        $kategori = kategori::all();
+        return view('beritas.tambah', compact('user', 'kategori'));
     }
 
     /**

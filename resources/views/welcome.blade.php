@@ -68,11 +68,10 @@
                                 <div class="main-menu d-none d-md-block">
                                     <nav style="width: 130%;">                  
                                         <ul id="navigation">    
-                                            <li><a href="index.html">Home</a></li>
-                                            <li><a href="categori.html">Category</a></li>
-                                            <li><a href="about.html">About</a></li>
-                                            <li><a href="latest_news.html">Comment</a></li>
-                                            <li style="margin-bottom: -1%; margin-left: 55%;" >
+                                            <li><a href="{{route('welcome')}}">Home</a></li>
+                                            <li><a href="#kategori" >Category</a></li>
+                                            <li><a href="latest_news.html">About</a></li>
+                                            <li style="margin-bottom: -1%; margin-left: 58%;" >
                                                 <div class="col-xl-2 col-lg-2 col-md-4">
                                                     <div class="header-right-btn f-right d-none d-lg-block">
                                                         <i class="fas fa-search special-tag"></i>

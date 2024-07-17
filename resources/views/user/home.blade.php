@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html class="no-js" lang="zxx">
     <head>
@@ -69,12 +68,11 @@
                                 <div class="main-menu d-none d-md-block">
                                     <nav style="width: 130%;">                  
                                         <ul id="navigation">    
-                                            <li><a href="index.html">Home</a></li>
-                                            <li><a href="categori.html">Category</a></li>
-                                            <li><a href="about.html">About</a></li>
-                                            <li><a href="latest_news.html">Comment</a></li>
-                                            <li><a href="latest_news.html">Add News</a></li>
-                                            <li style="margin-bottom: -1%; margin-left: 45.5%;" >
+                                            <li><a href="{{route('user.home')}}">Home</a></li>
+                                            <li><a href="#kategori" >Category</a></li>
+                                            <li><a href="latest_news.html">About</a></li>
+                                            <li><a href="">Add News</a></li>
+                                            <li style="margin-bottom: -1%; margin-left: 50%;" >
                                                 <div class="col-xl-2 col-lg-2 col-md-4">
                                                     <div class="header-right-btn f-right d-none d-lg-block">
                                                         <i class="fas fa-search special-tag"></i>
@@ -123,7 +121,7 @@
     <main>
         {{-- Content --}}
         @include('include.frontend.tranding')
-    
+        
         @include('include.frontend.category')
             {{-- Content --}}
     </main>

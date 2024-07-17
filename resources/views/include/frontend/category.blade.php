@@ -1,6 +1,6 @@
 <!-- Whats New Start -->
     <section class="whats-news-area pt-50 pb-20">
-        <div class="container">
+        <div class="container" id="kategori">
             <div class="row">
             <div class="col-lg-8">
                 <div class="row d-flex justify-content-between">
@@ -24,7 +24,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" style="overflow-x: hidden; overflow-y:scroll; width:100%; height:600px;">
                     <div class="col-12">
                         <!-- Nav Card -->
                         <div class="tab-content" id="nav-tabContent">
@@ -38,9 +38,9 @@
                                                 <div class="what-img">
                                                     <img src="{{asset('/img/berita/' . $data->cover)}}" alt="">
                                                 </div>
-                                                <div class="what-cap~~" >
+                                                <div class="what-cap" >
                                                     <span class="color1">{{$data->kategori->nama}}</span>
-                                                    <h4   class="pl-3"><a href="#">{{ substr($data->judul,0,44) }} ...</a></h4>
+                                                    <h4   class="pl-3"><a href="{{ route('berita.show', $data->id) }}">{{ substr($data->judul,0,44) }} ...</a></h4>
                                                 </div>
                                             </div>
                                         </div>
@@ -63,45 +63,41 @@
                     <div class="single-box">
                         <div class="follow-us d-flex align-items-center">
                             <div class="follow-social">
-                                <a href="#"><img src="{{ asset ('frontend/assets/img/news/icon-fb.png') }}" alt=""></a>
+                                <a href="https://web.facebook.com/smkassalaam/?locale=id_ID&_rdc=1&_rdr"><img src="{{ asset ('frontend/assets/img/news/icon-fb.png') }}" alt=""></a>
                             </div>
                             <div class="follow-count">  
-                                <span>8,045</span>
-                                <p>Fans</p>
+                                <span>Facebook</span>
+                                <p>Smk Assalaam</p>
                             </div>
                         </div> 
                         <div class="follow-us d-flex align-items-center">
                             <div class="follow-social">
-                                <a href="#"><img src="{{ asset ('frontend/assets/img/news/icon-tw.png') }}" alt=""></a>
+                                <a href="https://smkassalaambandung.sch.id"><img src="{{ asset ('frontend/assets/img/news/icon-tw.png') }}" alt="" width="30px"></a>
                             </div>
                             <div class="follow-count">
-                                <span>8,045</span>
-                                <p>Fans</p>
+                                <span>Website</span>
+                                <p>Smk Assalaam</p>
                             </div>
                         </div>
                             <div class="follow-us d-flex align-items-center">
                             <div class="follow-social">
-                                <a href="#"><img src="{{ asset ('frontend/assets/img/news/icon-ins.png') }}" alt=""></a>
+                                <a href="https://www.instagram.com/smkassalaam/?hl=en"><img src="{{ asset ('frontend/assets/img/news/icon-ins.png') }}" alt=""></a>
                             </div>
                             <div class="follow-count">
-                                <span>8,045</span>
-                                <p>Fans</p>
+                                <span>Instagram</span>
+                                <p>Smk Assalaam</p>
                             </div>
                         </div>
                         <div class="follow-us d-flex align-items-center">
                             <div class="follow-social">
-                                <a href="#"><img src="{{ asset ('frontend/assets/img/news/icon-yo.png') }}" alt=""></a>
+                                <a href="https://www.youtube.com/@smkassalaambandung4011"><img src="{{ asset ('frontend/assets/img/news/icon-yo.png') }}" alt=""></a>
                             </div>
                             <div class="follow-count">
-                                <span>8,045</span>
-                                <p>Fans</p>
+                                <span>Youtube</span>
+                                <p>Smk Assalaam</p>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- New Poster -->
-                <div class="news-poster d-none d-lg-block">
-                    <img src="{{ asset ('frontend/assets/img/news/news_card.jpg') }}" alt="">
                 </div>
             </div>
             </div>
